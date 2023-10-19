@@ -27,4 +27,16 @@
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
+    <actions>
+        <action id="com.qilin.localgpt.PopupDialogAction" class="com.qilin.localgpt.PopupDialogAction"
+                text="Pop Dialog Action" description="QL customised action example"
+                >
+            <keyboard-shortcut
+                    keymap="$default"
+                    first-keystroke="control alt A"
+                    second-keystroke="C"/>
+            <override-text place="MainMenu" text="Pop Dialog Action"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
